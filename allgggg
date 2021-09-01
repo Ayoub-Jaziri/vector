@@ -1,0 +1,54 @@
+PROCEDURE vect(a,b,c,a1,b1,c1)
+VAR
+ rez:INTEGER 
+ rez=0
+BEGIN
+    rez=a*a1+b*b1+c*c1
+END
+
+ALGORITHM algorithm_name
+VAR
+    arr=array_name : ARRAY_OF array_name : ARRAY_OF type[length];
+    i=INTEGER;
+    j=INTEGER;
+    i=0;
+    j=0;
+BEGIN
+    FOR i FROM 0 TO arr.length STEP 1  DO
+    FOR j FROM i TO arr.length STEP 1  DO
+        IF arr[i]<>arr[j] THEN vect() 
+        END_IF
+
+        IF (rez=0) THEN
+            return('IR vectors are orthogonal')
+        
+        END_IF
+    END_FOR    
+    END_FOR
+END
+
+
+PROCEDURE vect()
+VAR
+    rez:INTEGER 
+    rez=0
+    arr:array_name : ARRAY_OF array_name : ARRAY_OF type[length];
+    i:INTEGER;
+    j:INTEGER;
+    i=0;
+    j=0;
+BEGIN
+    
+
+    FOR i FROM 1 TO arr.length STEP 1  DO
+    FOR j FROM 0 TO n STEP 1  DO
+        IF arr[i]<>arr[j] THEN 
+         rez=a*a1+b*b1+c*c1
+        END_IF
+        IF (rez=0) THEN
+            return('IR vectors are orthogonal')
+        
+        END_IF
+    END_FOR    
+    END_FOR
+END
